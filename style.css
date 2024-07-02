@@ -23,6 +23,7 @@ body {
 
 .task-tabs div {
     padding: 1em;
+    margin-right: 15px; 
 }
 
 #under-line {
