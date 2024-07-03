@@ -3,6 +3,7 @@ body {
     background-image: url(images/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: "Sunflower", sans-serif;
 }
 
 .container {
@@ -27,7 +28,7 @@ body {
 }
 
 #under-line {
-    height: 4px;
+    height: 4px !important;
     background-color: #ADD8E6;
     position: absolute;
     width: 60px;
@@ -44,4 +45,50 @@ body {
 
 .task-done {
     text-decoration: line-through; /* 텍스트 밑줄 */
+    background-color: #FFEBCD;
+    transition: 0.5s;
 }
+
+.button-box {
+    display: flex;
+}
+
+.button-box button {
+    height: 100%;
+    border: none;
+    width: 5em;
+    margin: 0;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.button-box button :active {
+    position: relative;
+    top: 2px;
+}
+
+.button-box button:first-child:hover {
+    background-color: #B0E0E6;
+}
+
+.button-box button:nth-child(2):hover {
+    background-color: #FFFACD;
+}
+
+.fa-check {
+    color: #4169E1;
+}
+
+.fa-undo-alt {
+    color: #778899;
+}
+
+.fa-trash-can {
+    color: #FF4500;
+}
+
+
+
+
+
+
