@@ -25,6 +25,7 @@ body {
 .task-tabs div {
     padding: 1em;
     margin-right: 15px; 
+    cursor: pointer;
 }
 
 #under-line {
@@ -48,6 +49,7 @@ body {
     background-color: #FFEBCD;
     transition: 0.5s;
 }
+
 
 .button-box {
     display: flex;
