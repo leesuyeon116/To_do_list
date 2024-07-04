@@ -1,13 +1,18 @@
 let taskInput = document.getElementById("task-input");
 let addButton = document.getElementById("add-button");
 let tabs = document.querySelectorAll(".task-tabs div");
+let underLine = document.getElementById("tab-underline");
 let taskList = [];
 let mode = "all";
 let filterList = [];
+
 addButton.addEventListener("click", addTask);
 
 for(let i = 1; i < tabs.length; i ++) {
     tabs[i].addEventListener("click", function (event) {
+        underLine.style.width = event.target.offsetWidth + "px";
+        underLine.style.left = event.target.offsetLeft + "px";
+        mode = event.target.id;
         filter(event);
     });
 }
