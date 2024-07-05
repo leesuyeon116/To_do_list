@@ -78,6 +78,17 @@ function deleteTask(id) {
             break;
         }
     }
+
+    filterList = taskList.filter(task => {
+        if (mode === "ongoing") {
+            return !task.isComplete;
+        } else if (mode === "done") {
+            return task.isComplete;
+        } else {
+            return true;
+        }
+    });
+
     render();
 }
 
